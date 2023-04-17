@@ -1,0 +1,13 @@
+@startuml ユースケース図
+left to right direction
+
+actor 販売部 #DDDDDD;line:Blue;line.bold;
+
+rectangle 販売管理システム {
+usecase 注文商品の確認
+usecase 出荷状況の登録
+}
+販売部 --> 注文商品の確認 :田中さん
+販売部 --> 出荷状況の登録 :鈴木さん
+
+@enduml
