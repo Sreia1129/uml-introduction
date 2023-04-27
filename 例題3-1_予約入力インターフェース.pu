@@ -1,0 +1,10 @@
+@startuml ユースケース図
+class 画面マネージャ {
+---
+}
+interface 予約入力 {
+' <<interface>>
+---
+}
+予約入力 <|.. 画面マネージャ
+@enduml
