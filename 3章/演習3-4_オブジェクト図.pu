@@ -4,21 +4,29 @@
         車種
     }
 
-    object "<u>車リスト:車</u>" as car2{
-        車種
-    }
-
     object "<u>タイヤリスト:タイヤ</u>" as tire1{
-        種類=オールシーズンタイヤ
+        種類
         価格
     }
 
     object "<u>タイヤリスト:タイヤ</u>" as tire2{
-        種類=スタッドレスタイヤ
+        種類
         価格
     }
 
+    object "<u>タイヤリスト:タイヤ</u>" as tire3{
+        種類
+        価格
+    }
+
+    object "<u>タイヤリスト:タイヤ</u>" as tire4{
+        種類
+        価格
+    }
+
+
     car1 -- tire1
     car1 -- tire2
-    car2 -- tire1
+    car1 -- tire3
+    car1 -- tire4
 @enduml
