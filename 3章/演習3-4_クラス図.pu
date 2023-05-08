@@ -1,0 +1,13 @@
+@startuml クラス図
+    left to right direction
+    class 車{
+    - 車種:String
+    ---
+    }
+    class タイヤ{
+    - タイヤの種類:String
+    - 価格:int
+    ---
+    }
+    タイヤ "1..*" --o "1"車
+@enduml
