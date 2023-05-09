@@ -1,0 +1,20 @@
+@startuml 資格取得
+left to right direction
+object "<u>資格情報1:資格</u>" as license1 {
+    名称=情報処理安全確保支援士
+}
+object "<u>資格情報2:資格</u>" as license2 {
+    名称=LinuC試験Level1
+}
+object "<u>高橋洋平:社員</u>" as user1 {
+    取得日=2020年10月21日
+    取得日=2021年3月28日
+}
+object "<u>樋口正之:社員</u>" as user2 {
+    取得日
+}
+
+license1 -- user1
+license2 -- user1
+license1 -- user2
+@enduml
