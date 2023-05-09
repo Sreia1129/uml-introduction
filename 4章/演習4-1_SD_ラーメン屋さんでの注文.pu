@@ -11,8 +11,8 @@ activate  boundary
     activate control
     boundary -> control : 調理を指示する
     control -> control : 調理をする
-    boundary <. control : ラーメン
-    member < boundary:ラーメン
+    boundary <-- control : ラーメン
+    member <-- boundary:ラーメン
     deactivate control
 deactivate boundary
     
