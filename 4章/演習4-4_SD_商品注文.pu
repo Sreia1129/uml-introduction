@@ -5,7 +5,7 @@
     participant "商品" as entity1 <<entity>>
   
     activate human
-    human -> boundary
+    human -> boundary : 商品情報を確認する
 
         activate boundary
             activate entity1
@@ -21,7 +21,7 @@
         deactivate boundary
         deactivate boundary
 
-    human -> boundary
+    human -> boundary : 商品登録をする
 
     activate boundary
     create "注文" as entity <<entity>>

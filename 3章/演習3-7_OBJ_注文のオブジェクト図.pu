@@ -15,11 +15,11 @@
         数量=1
     }
 
-    object "<u>商品リスト:テレビ</u>" as merchandise1{
+    object "<u>商品リスト:4K液晶テレビ</u>" as merchandise1{
         型式=V12345
     }
 
-    object "<u>商品リスト:冷蔵後</u>" as merchandise2{
+    object "<u>商品リスト:大容量スゴ冷え冷蔵後</u>" as merchandise2{
         型式=R8765
     }
 
@@ -47,5 +47,5 @@
     order3 -- merchandise2
     importantcustomer -- order1
     importantcustomer -- order2
-    customer1 -- order2
+    customer1 -- order3
 @enduml
