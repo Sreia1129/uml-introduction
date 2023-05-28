@@ -1,0 +1,15 @@
+@startuml 自動販売機
+left to right direction
+actor 客#DDDDDD;line:Red;line.bold;
+actor ベンダー #DDDDDD;line:Blue;line.bold;
+
+rectangle 自動販売機 {
+usecase 商品を選んでお金を入れる
+usecase ドリンクの補充
+usecase 料金の回収
+}
+客 --> 商品を選んでお金を入れる
+ドリンクの補充 <-- ベンダー
+料金の回収 <-- ベンダー
+
+@enduml
