@@ -1,5 +1,5 @@
 @startuml カレーライス作り
-title カレーライス
+title カレーライス作り
 start
 :材料を用意する;
 fork 
