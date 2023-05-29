@@ -1,0 +1,28 @@
+@startuml カレーライス作り
+title カレーライス
+start
+:材料を用意する;
+fork 
+:お米と水を炊飯器に入れてスイッチを押す;
+fork again
+:野菜を洗う;
+:玉ねぎをみじん切りにする;
+fork
+:玉ねぎを炒める;
+fork again
+:肉を切る;
+end fork
+fork
+:肉を炒める;
+fork again
+:人参とジャガイモを一口大に切る;
+end fork
+fork
+:水と野菜を入れて火が通るまで煮込む;
+:カレールーを入れて煮込む;
+end fork
+end fork
+fork 
+:皿に盛り付ける;
+stop
+@enduml
