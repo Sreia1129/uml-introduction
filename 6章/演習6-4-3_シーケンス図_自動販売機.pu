@@ -1,0 +1,18 @@
+@startuml シーケンス図
+    hide footbox
+    Actor 客 as human
+    participant "料金装置" as price
+    participant "ボタン" as button
+    participant "ベンダー装置" as bender
+    activate human
+        activate price
+        human -> price : お金を入れる
+        deactivate price
+            activate button
+                activate bender
+                    human ->button : ボタンを押す
+                    button -> bender : ボタンの商品情報を送る
+                    human <- bender : 商品を出す
+            deactivate button
+    deactivate human
+@enduml
